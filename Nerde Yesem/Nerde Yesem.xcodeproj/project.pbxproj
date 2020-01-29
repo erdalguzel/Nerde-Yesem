@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EC8FCB323DEEF2400569143 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC8FCB223DEEF2300569143 /* CoreLocation.framework */; };
+		AC4F581F23D0A239000BEE56 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F581E23D0A238000BEE56 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AC7036CF23CDB39B00AB5F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7036CE23CDB39B00AB5F57 /* AppDelegate.swift */; };
+		AC7036D423CDB39B00AB5F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7036D223CDB39B00AB5F57 /* Main.storyboard */; };
+		AC7036D723CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC7036D523CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodeld */; };
+		AC7036D923CDB39E00AB5F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7036D823CDB39E00AB5F57 /* Assets.xcassets */; };
+		AC7036DC23CDB39E00AB5F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7036DA23CDB39E00AB5F57 /* LaunchScreen.storyboard */; };
+		AC7036E423CDE1C400AB5F57 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7036E323CDE1C400AB5F57 /* RestaurantTableViewController.swift */; };
+		AC7036E623CDE35C00AB5F57 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7036E523CDE35C00AB5F57 /* RestaurantTableViewCell.swift */; };
+		AC7036E823CDED5000AB5F57 /* RestaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7036E723CDED5000AB5F57 /* RestaurantInfo.swift */; };
+		ACEB1E1D23D05F2C00CA68F5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB1E1C23D05F2C00CA68F5 /* WebKit.framework */; };
+		ACEE4AC323CF17A800AEE90A /* RestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE4AC223CF17A800AEE90A /* RestaurantInfoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EC8FCB223DEEF2300569143 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AC4F581E23D0A238000BEE56 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		AC7036CB23CDB39B00AB5F57 /* Nerde Yesem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nerde Yesem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7036CE23CDB39B00AB5F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC7036D323CDB39B00AB5F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC7036D623CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nerde_Yesem.xcdatamodel; sourceTree = "<group>"; };
+		AC7036D823CDB39E00AB5F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC7036DB23CDB39E00AB5F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC7036DD23CDB39E00AB5F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7036E323CDE1C400AB5F57 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		AC7036E523CDE35C00AB5F57 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		AC7036E723CDED5000AB5F57 /* RestaurantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfo.swift; sourceTree = "<group>"; };
+		ACEB1E1C23D05F2C00CA68F5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ACEE4AC223CF17A800AEE90A /* RestaurantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC7036C823CDB39B00AB5F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC8FCB323DEEF2400569143 /* CoreLocation.framework in Frameworks */,
+				AC4F581F23D0A239000BEE56 /* Social.framework in Frameworks */,
+				ACEB1E1D23D05F2C00CA68F5 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC7036C223CDB39B00AB5F57 = {
+			isa = PBXGroup;
+			children = (
+				AC7036CD23CDB39B00AB5F57 /* Nerde Yesem */,
+				AC7036CC23CDB39B00AB5F57 /* Products */,
+				ACEB1E1B23D05F2B00CA68F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		AC7036CC23CDB39B00AB5F57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC7036CB23CDB39B00AB5F57 /* Nerde Yesem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC7036CD23CDB39B00AB5F57 /* Nerde Yesem */ = {
+			isa = PBXGroup;
+			children = (
+				AC93036123CF4ADC00EAA9D5 /* Controller */,
+				AC93036023CF4AD600EAA9D5 /* View */,
+				AC93035F23CF4ACD00EAA9D5 /* Model */,
+				AC7036CE23CDB39B00AB5F57 /* AppDelegate.swift */,
+				AC7036D223CDB39B00AB5F57 /* Main.storyboard */,
+				AC7036D823CDB39E00AB5F57 /* Assets.xcassets */,
+				AC7036DA23CDB39E00AB5F57 /* LaunchScreen.storyboard */,
+				AC7036DD23CDB39E00AB5F57 /* Info.plist */,
+			);
+			path = "Nerde Yesem";
+			sourceTree = "<group>";
+		};
+		AC93035F23CF4ACD00EAA9D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC7036E723CDED5000AB5F57 /* RestaurantInfo.swift */,
+				AC7036D523CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC93036023CF4AD600EAA9D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC7036E523CDE35C00AB5F57 /* RestaurantTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC93036123CF4ADC00EAA9D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC7036E323CDE1C400AB5F57 /* RestaurantTableViewController.swift */,
+				ACEE4AC223CF17A800AEE90A /* RestaurantInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACEB1E1B23D05F2B00CA68F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EC8FCB223DEEF2300569143 /* CoreLocation.framework */,
+				AC4F581E23D0A238000BEE56 /* Social.framework */,
+				ACEB1E1C23D05F2C00CA68F5 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC7036CA23CDB39B00AB5F57 /* Nerde Yesem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7036E023CDB39F00AB5F57 /* Build configuration list for PBXNativeTarget "Nerde Yesem" */;
+			buildPhases = (
+				AC7036C723CDB39B00AB5F57 /* Sources */,
+				AC7036C823CDB39B00AB5F57 /* Frameworks */,
+				AC7036C923CDB39B00AB5F57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nerde Yesem";
+			productName = "Nerde Yesem";
+			productReference = AC7036CB23CDB39B00AB5F57 /* Nerde Yesem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC7036C323CDB39B00AB5F57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Erdal Guzel";
+				TargetAttributes = {
+					AC7036CA23CDB39B00AB5F57 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = AC7036C623CDB39B00AB5F57 /* Build configuration list for PBXProject "Nerde Yesem" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC7036C223CDB39B00AB5F57;
+			productRefGroup = AC7036CC23CDB39B00AB5F57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC7036CA23CDB39B00AB5F57 /* Nerde Yesem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC7036C923CDB39B00AB5F57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7036DC23CDB39E00AB5F57 /* LaunchScreen.storyboard in Resources */,
+				AC7036D923CDB39E00AB5F57 /* Assets.xcassets in Resources */,
+				AC7036D423CDB39B00AB5F57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC7036C723CDB39B00AB5F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7036E623CDE35C00AB5F57 /* RestaurantTableViewCell.swift in Sources */,
+				ACEE4AC323CF17A800AEE90A /* RestaurantInfoViewController.swift in Sources */,
+				AC7036D723CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodeld in Sources */,
+				AC7036E423CDE1C400AB5F57 /* RestaurantTableViewController.swift in Sources */,
+				AC7036E823CDED5000AB5F57 /* RestaurantInfo.swift in Sources */,
+				AC7036CF23CDB39B00AB5F57 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC7036D223CDB39B00AB5F57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC7036D323CDB39B00AB5F57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC7036DA23CDB39E00AB5F57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC7036DB23CDB39E00AB5F57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC7036DE23CDB39E00AB5F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC7036DF23CDB39E00AB5F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC7036E123CDB39F00AB5F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6PM73A63J;
+				INFOPLIST_FILE = "Nerde Yesem/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deu.Nerde-Yesem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AC7036E223CDB39F00AB5F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6PM73A63J;
+				INFOPLIST_FILE = "Nerde Yesem/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deu.Nerde-Yesem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC7036C623CDB39B00AB5F57 /* Build configuration list for PBXProject "Nerde Yesem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7036DE23CDB39E00AB5F57 /* Debug */,
+				AC7036DF23CDB39E00AB5F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7036E023CDB39F00AB5F57 /* Build configuration list for PBXNativeTarget "Nerde Yesem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7036E123CDB39F00AB5F57 /* Debug */,
+				AC7036E223CDB39F00AB5F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC7036D523CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC7036D623CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodel */,
+			);
+			currentVersion = AC7036D623CDB39B00AB5F57 /* Nerde_Yesem.xcdatamodel */;
+			path = Nerde_Yesem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC7036C323CDB39B00AB5F57 /* Project object */;
+}
