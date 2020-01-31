@@ -9,3 +9,7 @@ This app is tested on many Xcode simulators and an iPhone device capable of runn
 # Contributions
 
 You can clone this project to your workspace and start developing right away.
+
+# Code Conventions
+
+This project follows official Google's Swift Guide. Follow the link google.github.io/swift to see more.
