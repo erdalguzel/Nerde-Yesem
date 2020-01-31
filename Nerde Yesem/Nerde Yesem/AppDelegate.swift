@@ -5,7 +5,7 @@ import CoreData
 import LocalAuthentication
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
 	let locationManager: CLLocationManager! = CLLocationManager()
@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 		
 		// MARK: Authenticate the user with Face/Touch ID
-		//authenticateUser()
-		
+		authenticateUser()
+		setupLocationManager()
         return true
     }
 
@@ -121,6 +121,16 @@ extension AppDelegate {
 			self.window?.rootViewController?.present(alert, animated: true, completion: nil)
 		}
 	}
+	
+	func setupLocationManager() {
+		locationManager.delegate = self
+		locationManager.requestWhenInUseAuthorization()
+		locationManager.desiredAccuracy = kCLLocationAccuracyBest
+		locationManager.startUpdatingLocation()
+	}
 }
+
+
+
 
 
