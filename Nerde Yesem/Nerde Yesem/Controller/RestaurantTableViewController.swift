@@ -3,6 +3,9 @@ import Foundation
 import CoreLocation
 
 class RestaurantTableViewController: UITableViewController, CLLocationManagerDelegate {
+	
+	// MARK: - Variables
+	
 	let apiKey: String = "e06745d59aa6170842e9760500129d63"
 	let cellIdentifier: String = "restaurantCell"
 	var restaurantImages: [URL] = []
@@ -10,7 +13,7 @@ class RestaurantTableViewController: UITableViewController, CLLocationManagerDel
 	var restInfoVC = RestaurantInfoViewController()
 	var nearby_restaurants = [NearbyRestaurant]()
 	
-	// MARK: Lifecycle methods
+	// MARK: - Lifecycle methods
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -18,7 +21,7 @@ class RestaurantTableViewController: UITableViewController, CLLocationManagerDel
 		tableView.delegate = self
 		
 		let urlString = """
-		https://developers.zomato.com/api/v2.1/geocode?lat=\(38.390625)&lon=\(27.02147911555935)
+		https://developers.zomato.com/api/v2.1/geocode?lat=\(Double((locationManager.location?.coordinate.latitude)!))&lon=\(Double((locationManager.location?.coordinate.longitude)!))
 		"""
 		let url = URL(string: urlString)
 		
@@ -45,12 +48,11 @@ class RestaurantTableViewController: UITableViewController, CLLocationManagerDel
 						print("Error is: \(error)")
 					}
 				}
-				}.resume()
+			}.resume()
 		}
 	}
 	
-	// MARK: Segue methods
-	
+	// MARK: - Segue methods
 	@IBAction func showRestaurants(_ sender: UIBarButtonItem) {
 		self.performSegue(withIdentifier: "showRestaurants", sender: self)
 	}
@@ -61,11 +63,10 @@ class RestaurantTableViewController: UITableViewController, CLLocationManagerDel
 			self.present(restaurantTableVC, animated: true, completion: nil)
 		}
 	}
-	
 }
 
 extension RestaurantTableViewController {
-	// MARK: Tableview delegate methods
+	// MARK: - Tableview delegate methods
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return nearby_restaurants.count
@@ -100,11 +101,5 @@ extension RestaurantTableViewController {
 	
 	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 		
-	}
-	func setupLocationManager() {
-		locationManager.delegate = self
-		locationManager.requestWhenInUseAuthorization()
-		locationManager.desiredAccuracy = kCLLocationAccuracyBest
-		locationManager.startUpdatingLocation()
 	}
 }
