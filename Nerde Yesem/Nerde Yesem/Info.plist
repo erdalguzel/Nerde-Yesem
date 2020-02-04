@@ -40,5 +40,12 @@
 	<string>The app will use your current location to suggest locations.</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>This app will use Face/Touch ID to authenticate the user.</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>twitter</string>
+		<string>whatsapp</string>
+		<string>facebook</string>
+	</array>
+	
 </dict>
 </plist>
