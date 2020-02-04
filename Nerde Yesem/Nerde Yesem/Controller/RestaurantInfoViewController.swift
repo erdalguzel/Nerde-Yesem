@@ -13,4 +13,10 @@ class RestaurantInfoViewController: UIViewController {
 		let request = URLRequest(url: self.loadedUrl!)
 		restaurantWebView.load(request)
 	}
+	
+	@IBAction func shareMedia(_ sender: UIBarButtonItem) {
+        	let activityVC = UIActivityViewController(activityItems: [loadedUrl!], applicationActivities: nil)
+        	activityVC.popoverPresentationController?.sourceView = self.view
+       		self.present(activityVC, animated: true, completion: nil)
+    	}
 }
