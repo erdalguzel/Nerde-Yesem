@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oZx-e8-E1g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurants-->
+        <scene sceneID="aya-zS-r7j">
+            <objects>
+                <tableViewController storyboardIdentifier="RestaurantTableViewController" title="Restaurants" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XUM-I5-XgB" customClass="RestaurantTableViewController" customModule="Nerde_Yesem" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3NC-N3-vLz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="restaurantCell" rowHeight="100" id="Dbh-eI-MIz" customClass="RestaurantTableViewCell" customModule="Nerde_Yesem" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dbh-eI-MIz" id="zId-Vq-GJX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbz-Uk-H8N">
+                                            <rect key="frame" x="20" y="11" width="133" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZD0-gJ-S0n">
+                                            <rect key="frame" x="20" y="39.5" width="49" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZD0-gJ-S0n" secondAttribute="bottom" constant="28.5" id="6uh-Kq-d7i"/>
+                                        <constraint firstItem="ZD0-gJ-S0n" firstAttribute="leading" secondItem="zId-Vq-GJX" secondAttribute="leadingMargin" id="FEt-hx-uzB"/>
+                                        <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="ZD0-gJ-S0n" secondAttribute="trailing" constant="325" id="KkE-JT-aT4"/>
+                                        <constraint firstItem="ZD0-gJ-S0n" firstAttribute="top" secondItem="hbz-Uk-H8N" secondAttribute="bottom" constant="8" id="QQY-ze-iLb"/>
+                                        <constraint firstItem="hbz-Uk-H8N" firstAttribute="top" secondItem="zId-Vq-GJX" secondAttribute="topMargin" id="UxP-Li-0EU"/>
+                                        <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="hbz-Uk-H8N" secondAttribute="trailing" constant="241" id="mPT-ob-B6H"/>
+                                        <constraint firstItem="hbz-Uk-H8N" firstAttribute="leading" secondItem="zId-Vq-GJX" secondAttribute="leadingMargin" id="mmT-JD-o1z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="restaurantName" destination="hbz-Uk-H8N" id="QGE-2z-1wE"/>
+                                    <outlet property="restaurantRating" destination="ZD0-gJ-S0n" id="wAq-VP-zXR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XUM-I5-XgB" id="bHe-au-Nc7"/>
+                            <outlet property="delegate" destination="XUM-I5-XgB" id="ceT-Pb-8OY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="G5h-O8-54U"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SE0-2E-KaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540.57971014492762" y="61.607142857142854"/>
+        </scene>
+        <!--Restaurant Information-->
+        <scene sceneID="xeD-Gi-URd">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantInfoViewController" title="Restaurant Information" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6lF-Pa-b7d" customClass="RestaurantInfoViewController" customModule="Nerde_Yesem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Tz-rx-61s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-7n-WtV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkp-CE-GNq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Restaurant Web Page" id="Naw-u5-vD0">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="D8U-Hd-3nw">
+                                            <connections>
+                                                <action selector="showRestaurants:" destination="lwA-Ms-4jN" id="sHG-BC-X53"/>
+                                                <segue destination="XUM-I5-XgB" kind="show" identifier="showRestaurants" id="qVt-S6-ZLJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Share" id="Twz-fc-zYK">
+                                            <connections>
+                                                <action selector="shareMedia:" destination="6lF-Pa-b7d" id="oDT-As-3JO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aLZ-gJ-dRf"/>
+                    </view>
+                    <connections>
+                        <outlet property="restaurantWebView" destination="g0D-7n-WtV" id="dn4-VM-7SX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t3Z-3x-Obl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lwA-Ms-4jN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1460.8695652173915" y="61.607142857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Pz-QC-0Kf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oZx-e8-E1g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p5s-Xy-ZSr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XUM-I5-XgB" kind="relationship" relationship="rootViewController" id="9mt-72-S7N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRF-eW-UiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368.11594202898556" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qVt-S6-ZLJ"/>
+    </inferredMetricsTieBreakers>
+</document>
